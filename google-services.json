@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1033603243088",
+    "project_id": "doraemontuthailand-a9b32",
+    "storage_bucket": "doraemontuthailand-a9b32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033603243088:android:34d3f37246bfc93391c555",
+        "android_client_info": {
+          "package_name": "com.doraemontuthailand.www"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR3j7cbRUV_w7SK4xnchbLCw14oWPC3tU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
