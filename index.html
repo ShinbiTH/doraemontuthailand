@@ -21,9 +21,59 @@
     <!-- APP CSS -->
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="app1.css">
-</head>
 
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+          width: 20px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+          border-radius: 10px;
+        }
+         
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: #0C70DF; 
+          border-radius: 10px;
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #0C70DF; 
+        }
+        </style>
+</head>
 <body>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 67 || 
+             e.keyCode === 86 || 
+             e.keyCode === 85 || 
+             e.keyCode === 117)) {
+            return false;
+        } else {
+            return true;
+        }
+};
+$(document).keypress("u",function(e) {
+  if(e.ctrlKey)
+  {
+return false;
+}
+else
+{
+return true;
+}
+});
+
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+</script>
 
     <!-- NAV -->
     <div class="nav-wrapper">
@@ -53,10 +103,125 @@
     </div>
     <!-- END NAV -->
 
-    <!-- HERO SECTION -->
+    
+     <!-- HERO SECTION -->
+     <div class="hero-section">
         <!-- HERO SLIDE -->
+        <div class="hero-slide">
+            <div class="owl-carousel carousel-nav-center" id="hero-carousel">
                 <!-- SLIDE ITEM -->
-                    <img src="./images/nav.jpg" alt="">
+                <div class="hero-slide-item">
+                    <img src="./images/banner1.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="hero-slide-item-content">
+                        <div class="item-content-wraper">
+                            <div class="item-content-title top-down">
+                                ไดโนเสาร์ของโนบิตะ
+                            </div>
+                            <div class="movie-infos top-down delay-2">
+                                <div class="movie-info">
+                                    <i class="bx bxs-star"></i>
+                                    <span>พากย์ไทย</span>
+                                </div>
+                                <div class="movie-info">
+                                    <i class="bx bxs-time"></i>
+                                    <span>100 mins</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>HD</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>12+</span>
+                                </div>
+                            </div>
+                            <div class="item-content-description top-down delay-4">
+                            เผลอหลุดปากประกาศต่อหน้าพวกซึเนะโอะว่า จะขุดฟอสซิลไดโนเสาร์มาให้ดูเป็นขวัญตา โดยการไปขุดหาฟอสซิลไดโนเสาร์ตามที่ต่างๆ และในระหว่างนั้นเอง ก็พบวัตถุปริศนา...
+                            </div>
+                            <div class="item-action top-down delay-6">
+                                <a href="./themovie/1980.html" class="btn btn-hover">
+                                    <i class="bx bxs-right-arrow"></i>
+                                    <span>คลิ๊กเพื่อรับชม</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END SLIDE ITEM -->
+                <!-- SLIDE ITEM -->
+                <div class="hero-slide-item">
+                    <img src="./images/banner2.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="hero-slide-item-content">
+                        <div class="item-content-wraper">
+                            <div class="item-content-title top-down">
+                            โดราเอมอน 1979
+                            </div>
+                            <div class="movie-infos top-down delay-2">
+                                <div class="movie-info">
+                                    <i class="bx bxs-star"></i>
+                                    <span>พากย์ไทย</span>
+                                </div>
+                                <div class="movie-info">
+                                    <i class="bx bxs-time"></i>
+                                    <span>8 mins</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>HD</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>12+</span>
+                                </div>
+                            </div>
+                            <div class="item-content-description top-down delay-4">
+                                เนื้อเรื่องส่วนมากจะเกี่ยวกับปัญหาของ โนบิตะ เด็กชายชั้น ป.4 ที่มักมีปัญหาอยู่บ่อยๆ โดยมีเพื่อนที่เป็นตัวละครสำคัญในเรื่องคือ โดราเอมอน หุ่นยนต์แมวดูแลเด็กจากโลกอนาคต
+                            </div>
+                            <div class="item-action top-down delay-6">
+                                <a href="./1979/index.html" class="btn btn-hover">
+                                    <i class="bx bxs-right-arrow"></i>
+                                    <span>กดเพื่อรับชม</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END SLIDE ITEM -->
+                <!-- SLIDE ITEM -->
+                <div class="hero-slide-item">
+                    <img src="./images/banner3.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="hero-slide-item-content">
+                        <div class="item-content-wraper">
+                            <div class="item-content-title top-down">
+                            โดราเอมอน ซีซั่น 16
+                            </div>
+                            <div class="movie-infos top-down delay-2">
+                                <div class="movie-info">
+                                    <i class="bx bxs-star"></i>
+                                    <span>พากย์ไทย</span>
+                                </div>
+                                <div class="movie-info">
+                                    <i class="bx bxs-time"></i>
+                                    <span>11 mins</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>HD</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>12+</span>
+                                </div>
+                            </div>
+                            <div class="item-content-description top-down delay-4">
+                                เนื้อเรื่องส่วนมากจะเกี่ยวกับปัญหาของ โนบิตะ เด็กชายชั้น ป.5 ที่มักมีปัญหาอยู่บ่อยๆ โดยมีเพื่อนที่เป็นตัวละครสำคัญในเรื่องคือ โดราเอมอน หุ่นยนต์แมวดูแลเด็กจากโลกอนาคต
+                            </div>
+                            <div class="item-action top-down delay-6">
+                                <a href="./season16/index.html" class="btn btn-hover">
+                                    <i class="bx bxs-right-arrow"></i>
+                                    <span>กดเพื่อรับชม</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- END SLIDE ITEM -->
             </div>
         </div>
@@ -69,8 +234,13 @@
                     </div>
                 </div>
                 <!-- END MOVIE ITEM -->
-                    <img src="./images/nav1.jpg" alt="">
-                        </a>
+            </div>
+        </div>
+        <!-- END TOP MOVIES SLIDE -->
+    </div>
+    <!-- END HERO SECTION -->
+                <!-- END MOVIE ITEM -->
+                    <img src="./images/nav1.jpg" id="round" alt="">
                   </div>
             </div>
         </div>
@@ -88,7 +258,7 @@
                 <!-- MOVIE ITEM -->
                 <a href="./1979/index.html" class="movie-item">
                     <img src="./images/1979.jpg" alt="shinbis41.html">
-                    <div class="movie-item-content">
+                    <div class="movie-item-content1">
                         <div class="movie-item-title">
                             
                         </div>
@@ -108,7 +278,7 @@
                 <!-- MOVIE ITEM -->
                 <a href="./season1/index.html" class="movie-item">
                     <img src="./images/season1.jpg" alt="shinbis41.html">
-                    <div class="movie-item-content">
+                    <div class="movie-item-content1">
                         <div class="movie-item-title">
                             
                         </div>
@@ -128,7 +298,7 @@
                 <!-- MOVIE ITEM -->
                 <a href="./season15/index.html" class="movie-item">
                     <img src="./images/season15.jpg" alt="">
-                    <div class="movie-item-content">
+                    <div class="movie-item-content1">
                         <div class="movie-item-title">
                         </div>
                         <div class="movie-infos">
@@ -146,7 +316,7 @@
                 <!-- MOVIE ITEM -->
                 <a href="./season16/index.html" class="movie-item">
                     <img src="./images/season16.jpg" alt="">
-                    <div class="movie-item-content">
+                    <div class="movie-item-content1">
                         <div class="movie-item-title">
                         </div>
                         <div class="movie-infos">
@@ -407,7 +577,6 @@
         </div>
     </div> -->
     <!-- END PRICING SECTION -->
-
 
    <br>
    <br>

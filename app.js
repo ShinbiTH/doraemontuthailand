@@ -6,6 +6,7 @@ $(document).ready(() => {
 
     // setting owl carousel
 
+    
     let navText = ["<i class='bx bx-chevron-left'></i>", "<i class='bx bx-chevron-right'></i>"]
 
     $('#hero-carousel').owlCarousel({
@@ -53,6 +54,8 @@ $(document).ready(() => {
             1600: {
                 items: 6
             }
+            
         }
     })
+    
 })

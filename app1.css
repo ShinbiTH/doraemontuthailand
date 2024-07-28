@@ -1,5 +1,5 @@
 :root {
-    --main-color: #c0392b;
+    --main-color: #0C70DF;
     --body-bg: #181616;
     --box-bg: #221f1f;
     --text-color: #ffffff;
@@ -16,6 +16,10 @@
 
 html {
     font-size: 16px;
+}
+
+#round{
+    border-radius: 6%;
 }
 
 body {
@@ -241,7 +245,7 @@ a.movie-item:hover {
 }
 
 .item-content-title {
-    font-size: 5rem;
+    font-size: 3rem;
     line-height: 5rem;
     font-weight: 900;
 }
@@ -362,6 +366,7 @@ a.movie-item:hover {
     top: 0;
     left: 0;
     width: 100%;
+    border-radius: 8%;
     transition: transform 0.3s linear;
 }
 
@@ -374,8 +379,12 @@ a.movie-item:hover {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 5px;
+    padding: 1px;
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+.movie-item-content1 {
+    left: 0;
 }
 
 .movie-item-content::before {
